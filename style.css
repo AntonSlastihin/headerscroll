@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 2000px;
+	position: relative;
+}
+#header{
+	perspective: 300px;
+	perspective-origin: center 0;
+	overflow: hidden;
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+.header-wrapper{
+	transform: rotateX(0deg);
+	transform-origin: center 0;
+	height: 80px;
+	background: orange;
+	transition: transform .4s ease-in;
+}
+.header-wrapper.active{
+	transform: rotateX(-90deg);
+}
